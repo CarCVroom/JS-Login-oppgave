@@ -25,24 +25,18 @@ function lag_nytt_passord() {
 };
 
 function log_inn() {
-        fetch('http://localhost:3000/get_password') // Henter data fra sever på localhost
-        .then(res => res.json())
-        .then(data => {
-                usernames[0] = data[0].username; // Data
-                passwords[0] = data[0].password;
-                usernames[1] = data[0].ADMINUSERNAME;
-                passwords[1] = data[0].ADMINPASSWORD;
+        password = document.getElementById('input2').value;
+        username = document.getElementById('input1').value;
 
-                if (document.getElementById('input1').value == usernames[0] && // Log in delen
-                        document.getElementById('input2').value == passwords[0]) {
-                        window.open('./bruker.html')
-                } else if (document.getElementById('input1').value == usernames[1] &&
-                           document.getElementById('input2').value == passwords[1]) {
-                        
-                        window.open('./admin.html');
-                } else {
-                        alert(`Wrong password or username`);
-                };
-        })
+        fetch('http://localhost:3000/get_password', {
+                method: 'POST',
+                headers: { "Content-Type": "application/json"},
+                body: JSON.stringify({
+                        username: username,
+                        password: password
+                })
+        }) // Henter data fra sever på localhost
+
+        
         .catch(err => console.log(err));
 };

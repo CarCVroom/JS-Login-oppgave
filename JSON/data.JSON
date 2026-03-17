@@ -1,8 +1,9 @@
 [
     {
-        "username": "blipblap6",
-        "password": "slopslop6",
+        "username": "blipblap7",
+        "password": "e3582a0b9d31b726c835a3f64cae3e72e922acece2f50b47644196056539af9ac3ac815147ad99ba820b9993cb0365247866ddf6d10b4bb581e4e067acac6830",
         "ADMINPASSWORD": "Passord1234",
-        "ADMINUSERNAME": "Admin5678"
+        "ADMINUSERNAME": "Admin5678",
+        "salt": "27bbafa694f9bfdc213ecdb64638f0c6"
     }
 ]
