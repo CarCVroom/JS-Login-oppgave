@@ -35,8 +35,14 @@ function log_inn() {
                         username: username,
                         password: password
                 })
-        }) // Henter data fra sever på localhost
-
-        
+        })
+        .then(res => {
+                if (res.ok) {
+                        window.open('./bruker.html')
+                } else {
+                        alert("Wrong password or username")
+                }
+        }
+        ) // Henter data fra sever på localhost
         .catch(err => console.log(err));
 };

@@ -73,7 +73,6 @@ app.post('/get_password', (req, res) => {
                         } else {
                                 res.status(401).send('Invalid password');
                         }
-                        res.send(fileData) // sender dataen inni json tilbake  
                 }
         })
 })
