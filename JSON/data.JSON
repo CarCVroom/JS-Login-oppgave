@@ -2,8 +2,9 @@
     {
         "username": "blipblap9",
         "password": "3cbef00b15788829acdf43015f839b8b6c05ffaa06a77dba426e1f7bb3f8bcdfa73f18fea975deb21dabcb60bdbc8fbf1f7a7cb0d9dd6380ca6562bd94d27af7",
-        "ADMINPASSWORD": "Passord1234",
+        "ADMINPASSWORD": "fdf36f292ee726af616d9873a3f3547b4f69a1e69cf1e13db3a7582f4cfc992fa3628154da412282cc65482d2d9d91af5f8126b8cfba94b7b2a753786443c605",
         "ADMINUSERNAME": "Admin5678",
+        "ADMINSALT": "6b1491c44a53e2299152cd9e80efa5c7",
         "salt": "c9e272da21efd4a8ae102c2d2a566a11"
     }
 ]
