@@ -37,8 +37,10 @@ function log_inn() {
                 })
         })
         .then(res => {
-                if (res.ok) {
-                        window.open('./bruker.html')
+                if (res.status === 200) {
+                        window.open('./bruker.html');
+                } else if (res.status === 201) {
+                        window.open('./admin.html');
                 } else {
                         alert("Wrong password or username")
                 }

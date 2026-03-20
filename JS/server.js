@@ -70,6 +70,9 @@ app.post('/get_password', (req, res) => {
                         
                         if (resualt && usernameGet === inputUsername) { 
                                 res.status(200).send("OK")
+                        } else if (inputPassword === dataGet[0].ADMINPASSWORD && 
+                                   inputUsername === dataGet[0].ADMINUSERNAME) {
+                                res.status(201).send("OK")
                         } else {
                                 res.status(401).send('Invalid password');
                         }
